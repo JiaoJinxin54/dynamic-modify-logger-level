@@ -1,0 +1,9 @@
+server:
+  port: 8002
+  servlet:
+    context-path: /log4j2
+logging:
+  level:
+    root: info
+    A: debug
+    B: warn
