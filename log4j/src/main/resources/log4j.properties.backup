@@ -1,0 +1,14 @@
+# log4j\u672C\u8EAB\u65E5\u5FD7\u7EA7\u522B\u4F7F\u7528debug
+log4j.debug=true
+
+# \u5B9A\u4E49appender\uFF0C\u5C06\u65E5\u5FD7\u6253\u5370\u5230\u63A7\u5236\u53F0
+log4j.appender.console=org.apache.log4j.ConsoleAppender
+log4j.appender.console.layout=org.apache.log4j.PatternLayout
+log4j.appender.console.layout.ConversionPattern=%d{yyyy/MM/dd HH:mm:ss.SSS} %5p [%t] %c : %m%n
+
+# \u5B9A\u4E49logger
+log4j.rootLogger=info,console
+log4j.logger.A=debug,console
+log4j.additivity.A=false
+log4j.logger.B=warn,console
+log4j.additivity.B=false
