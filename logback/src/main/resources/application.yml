@@ -1,0 +1,9 @@
+server:
+  port: 8003
+  servlet:
+    context-path: /logback
+logging:
+  level:
+    root: info
+    A: debug
+    B: warn
